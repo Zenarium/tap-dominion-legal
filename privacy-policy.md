@@ -54,7 +54,7 @@ We rely on platform and third-party security controls, including encrypted trans
 Depending on your region, you may have rights related to access, deletion, or objection to data processing.
 
 For requests, contact us:
-- Email: support@zenarium.am
+- Email: eduardsahakyan2001@gmail.com
 
 ## 9. Changes to This Policy
 
@@ -63,4 +63,4 @@ We may update this policy from time to time. We will update the "Last updated" d
 ## 10. Contact
 
 If you have questions about this policy:
-- support@zenarium.am
+- eduardsahakyan2001@gmail.com

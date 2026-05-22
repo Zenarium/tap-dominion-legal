@@ -43,4 +43,4 @@ These Terms are governed by the laws applicable in your primary distribution reg
 ## 9. Contact
 
 Questions about these Terms:
-- support@zenarium.am
+- eduardsahakyan2001@gmail.com
