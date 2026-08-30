@@ -13,21 +13,26 @@ Depending on which features you use, the app may process:
 - Advertising-related identifiers and ad interaction signals (for ad delivery and measurement).
 - Optional Google sign-in and account data:
   - Firebase Authentication identifier (UID),
+  - Google email address,
   - Google display name,
   - Google profile photo URL.
 - Cloud profile and game-progress data when you sign in with Google:
   - display name and avatar URL,
+  - the avatar you selected: your Google profile photo, no picture, or one of the avatars bundled with the app,
   - member-since year,
   - total hits, Classic and Survival best scores, daily Classic best score, and rank.
 - Global leaderboard data:
-  - your display name, leaderboard position, and score for Classic, Survival, or Total Hits may be shown to other players who use the leaderboard.
-  - your email address, Firebase UID, and profile photo URL are not returned as leaderboard entries.
+  - your display name, leaderboard position, score for Classic, Survival, or Total Hits, and the avatar you selected may be shown to other players who use the leaderboard.
+  - your Google profile photo URL is included in leaderboard entries only while you have selected that photo as your avatar. If you select one of the avatars bundled with the app, only its identifier is included; if you select no picture, no avatar data is included.
+  - your email address and Firebase UID are not returned as leaderboard entries. Your email address is not included in Online Duel records; your Firebase UID is used there as the technical player identifier described below.
 - Online PvP session data for matchmaking and match sync:
-  - anonymous player identifier (Firebase Anonymous Auth UID),
+  - Firebase Authentication identifier (an anonymous UID or your Google-linked UID, depending on whether you are signed in with Google),
+  - display name, selected avatar identifier, and Google profile photo URL when one is available,
   - matchmaking queue state and timestamps,
   - match identifier,
   - live score updates and final score,
   - player connection/presence flags.
+  - authenticated Online Duel users can read the temporary matchmaking queue so that their devices can find an available opponent. Your matched opponent may see your display name and selected avatar during the match and on its result screen.
 - Locally stored game data on your device (for example, settings and progress).
 
 ## 2. Optional Google Account and Anonymous Play
@@ -45,6 +50,7 @@ We process data to:
 - keep the app stable and fix crashes;
 - measure app performance and improve gameplay;
 - run online PvP matchmaking and synchronize online match state;
+- identify players to each other in Online Duel using their display name and selected avatar;
 - authenticate optional Google accounts and synchronize profile and game-progress data across devices;
 - provide and operate the global leaderboard;
 - process account-deletion requests;

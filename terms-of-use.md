@@ -22,7 +22,11 @@ You agree not to:
 
 You may use the App without a traditional account. Google sign-in is optional and enables cloud synchronization of your Tap Dominion profile and game progress. You are responsible for activity performed through your signed-in account.
 
-If you use the global leaderboard, your display name, leaderboard position, and score for the relevant category may be visible to other leaderboard users. You must not use a name or content that is unlawful, abusive, misleading, impersonates another person, or infringes another person's rights.
+If you use the global leaderboard, your display name, leaderboard position, score for the relevant category, and the avatar you selected may be visible to other leaderboard users. If you use Online Duel, your display name and selected avatar may be visible to authenticated users during matchmaking and to your matched opponent during the match and on its result screen. Selecting your Google profile photo as your avatar makes that photo visible in these features; you can select an avatar bundled with the App or no picture at all instead.
+
+Online Duel may match you with another player or, depending on availability, a computer-controlled opponent that the App identifies as AI.
+
+You must not use a name or content that is unlawful, abusive, misleading, impersonates another person, or infringes another person's rights.
 
 ## 4. Account Deletion
 
