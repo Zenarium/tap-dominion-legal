@@ -1,6 +1,6 @@
 # Tap Dominion Terms of Use
 
-Last updated: September 5, 2026
+Last updated: September 13, 2026
 
 By downloading or using Tap Dominion ("App"), you agree to these Terms.
 
@@ -19,13 +19,15 @@ You agree not to:
 - manipulate Campaign progress, virtual Credits, rewards, Booster inventory, or cosmetic unlocks
 - use bots, automation, modified clients, or unauthorized tools to gain an advantage or interfere with other players
 
-## 3. Accounts, Online Features, and Leaderboards
+## 3. Accounts, Friends, Online Features, and Leaderboards
 
 You may use the App without a traditional account. Google sign-in is optional and enables cloud synchronization of your Tap Dominion profile and game progress. You are responsible for activity performed through your signed-in account.
 
-If you use the global leaderboard, your display name, leaderboard position, score for the relevant category, and the avatar you selected may be visible to other leaderboard users. If you use Online Duel, your display name and selected avatar may be visible to authenticated users during matchmaking and to your matched opponent during the match and on its result screen. Selecting your Google profile photo as your avatar makes that photo visible in these features; you can select an avatar bundled with the App or no picture at all instead.
+If you use the global leaderboard, your display name, leaderboard position, score for the relevant category, and the avatar you selected may be visible to other leaderboard users. If you use Online Duel or Sector Duel, your display name and selected avatar may be visible to authenticated users during matchmaking and to your matched opponent during the match and on its result screen. Selecting your Google profile photo as your avatar makes that photo visible in these features; you can select an avatar bundled with the App or no picture at all instead.
 
-Online Duel may match you with another player or, depending on availability, a computer-controlled opponent that the App identifies as AI.
+Friends is a Google-account-only feature. You can share your friend code with a person you choose so that they can send a request; accepted friends can see the display name, selected avatar, Classic best score, and availability/activity information that the App shows for you. Friends can invite one another to Online Duel or Sector Duel. You can remove a friend or rotate your friend code from the App. Do not share a friend code unless you are comfortable with the recipient using it to request contact in the App.
+
+Online Duel and Sector Duel may match you with another player or, depending on availability, a computer-controlled opponent that the App identifies as AI.
 
 You must not use a name or content that is unlawful, abusive, misleading, impersonates another person, or infringes another person's rights.
 
@@ -54,7 +56,8 @@ You can permanently delete your Tap Dominion account from the App or at https://
 The App may include third-party services and SDKs, including Google sign-in, Firebase
 Authentication, Cloud Firestore, Firebase Realtime Database, Firebase Cloud Functions, Firebase
 Remote Config, Firebase App Check, Google Play Integrity, Apple App Attest, reCAPTCHA Enterprise,
-ads, and analytics. Their own terms and privacy policies may apply.
+ads, and analytics. Their own terms and privacy policies may apply. We may reject access to backend
+features when required app or device integrity checks cannot be verified.
 
 ## 7. Availability, Updates, and Changes
 
@@ -82,4 +85,4 @@ These Terms are governed by the laws applicable in your primary distribution reg
 ## 12. Contact
 
 Questions about these Terms:
-- eduardsahakyan2001@gmail.com
+- support@zenarium.am

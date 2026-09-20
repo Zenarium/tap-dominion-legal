@@ -1,6 +1,6 @@
 # Tap Dominion Privacy Policy
 
-Last updated: September 5, 2026
+Last updated: September 13, 2026
 
 Tap Dominion ("we", "us", "our") values your privacy. This policy explains what information the app processes and how it is used.
 
@@ -44,14 +44,22 @@ Depending on which features you use, the app may process:
   - your display name, leaderboard position, score for Classic, Survival, or Total Hits, and the avatar you selected may be shown to other players who use the leaderboard.
   - your Google profile photo URL is included in leaderboard entries only while you have selected that photo as your avatar. If you select one of the avatars bundled with the app, only its identifier is included; if you select no picture, no avatar data is included.
   - your email address and Firebase UID are not returned as leaderboard entries. Your email address is not included in Online Duel records; your Firebase UID is used there as the technical player identifier described below.
-- Online PvP session data for matchmaking and match sync:
+- Online PvP session data for matchmaking and match sync in Online Duel and Sector Duel:
   - Firebase Authentication identifier (an anonymous UID or your Google-linked UID, depending on whether you are signed in with Google),
   - display name, selected avatar identifier, and Google profile photo URL when one is available,
   - matchmaking queue state and timestamps,
   - match identifier,
-  - live score updates and final score,
+  - live score updates, final score, match status, connection flags, and result timestamps,
+  - for Sector Duel, per-target gameplay outcomes and aggregate hit, miss, accuracy, life-cell, turn, and round results; target positions are generated independently on each device and are not sent over the network,
+  - the selected cosmetic target style used to render a player's side of a Sector Duel,
   - player connection/presence flags.
-  - authenticated Online Duel users can read the temporary matchmaking queue so that their devices can find an available opponent. Your matched opponent may see your display name and selected avatar during the match and on its result screen.
+  - authenticated players can read the temporary queue for an online mode so that their devices can find an available opponent. Your matched opponent may see your display name and selected avatar during the match and on its result screen.
+- Friends and friend-invitation data, available only to players signed in with Google:
+  - a generated, rotatable friend code;
+  - friendship relationships, incoming and outgoing friend requests, request status, and related timestamps;
+  - availability and activity presence shared with accepted friends, such as online/offline status, whether you are in a menu or playing, an applicable Campaign level, and the last update time;
+  - duel invitations between friends, including sender and recipient account identifiers, match type (Online Duel or Sector Duel), invitation state, expiry time, and match identifier;
+  - friend-card data shown to accepted friends or involved request recipients: display name, selected avatar, and Classic best score. Your Google email address and Firebase UID are not displayed to friends as profile fields.
 - Locally stored game data on your device, including settings, ratings, Campaign progress, virtual
   Credits, Booster inventory, cosmetic target styles, profile data, and ad counters.
 
@@ -71,7 +79,9 @@ We process data to:
 - measure app usage and performance, understand feature and ad-reward funnels, fix errors, and
   improve gameplay;
 - run online PvP matchmaking and synchronize online match state;
-- identify players to each other in Online Duel using their display name and selected avatar;
+- identify players to each other in Online Duel and Sector Duel using their display name and selected avatar;
+- provide friend codes, friend requests, friend lists, availability indicators, and invitations to
+  Online Duel or Sector Duel between accepted friends;
 - authenticate optional Google accounts and synchronize profile, Campaign, virtual Credits,
   Booster, cosmetic, and game-progress data across devices;
 - provide and operate the global leaderboard;
@@ -92,7 +102,7 @@ The app uses third-party SDKs and services, including:
 - Firebase Authentication (Anonymous Auth and Google sign-in);
 - Cloud Firestore (signed-in profiles and game progress);
 - Firebase Realtime Database (online matchmaking and online match synchronization);
-- Firebase Cloud Functions (leaderboard and account deletion);
+- Firebase Cloud Functions (leaderboard, Friends, Sector Duel results, and account deletion);
 - Firebase Remote Config (app configuration and feature availability);
 - Firebase App Check, using Google Play Integrity on production Android builds and Apple App Attest
   on production iOS builds (backend protection and abuse prevention);
@@ -121,7 +131,8 @@ On iOS, the app may request tracking authorization through Apple's App Tracking 
 - Signed-in cloud profile, game-progress, Campaign, virtual Credits, Booster, and cosmetic data
   remain in our Firebase services until you delete your Tap Dominion account, unless a longer
   retention period is required by law or necessary to resolve a security, fraud, or legal issue.
-- Online PvP queue/match records are designed to be temporary and are cleaned up when matchmaking is cancelled, sessions end, or disconnections are detected.
+- Online PvP queue/match records are designed to be temporary and are cleaned up when matchmaking is cancelled, sessions end, or disconnections are detected. A private Sector Duel result receipt may be retained for the two participants until it is acknowledged or an associated account is deleted.
+- Friend codes, friendship relationships, pending requests, invitations, and their technical mirrors remain while needed to provide the Friends feature. Removing a friend, cancelling or clearing a request or invitation, rotating a code, or deleting an account removes the relevant records; presence is temporary and is removed or marked offline when the session ends.
 - App Check attestation material and tokens are retained according to the applicable attestation
   provider's and Firebase's retention rules.
 - Analytics, crash, authentication, database, configuration, integrity, and advertising data
@@ -129,7 +140,7 @@ On iOS, the app may request tracking authorization through Apple's App Tracking 
 
 ## 7. Account Deletion
 
-You can permanently delete your Tap Dominion account from the App or at https://tapdominion.web.app/delete-account/. Deletion requires Google sign-in for the account being deleted and removes the Firebase Authentication user, cloud profile, synchronized Campaign progress, virtual Credits, Booster inventory, cosmetic target styles, stored game-progress data, and active Online Duel records associated with that account. It does not delete your Google Account itself.
+You can permanently delete your Tap Dominion account from the App or at https://tapdominion.web.app/delete-account/. Deletion requires Google sign-in for the account being deleted and removes the Firebase Authentication user, cloud profile, synchronized Campaign progress, virtual Credits, Booster inventory, cosmetic target styles, stored game-progress data, friend code, friendship and request records, pending invitations, presence, Sector Duel result receipts, and active online-match records associated with that account. It does not delete your Google Account itself.
 
 Deletion does not necessarily remove data that third-party providers retain independently, such as aggregated analytics, crash diagnostics, advertising records, or data they must retain under their own policies or legal obligations.
 
@@ -149,7 +160,7 @@ not guarantee that the App or its services will always be secure or available.
 Depending on your region, you may have rights related to access, deletion, or objection to data processing.
 
 For access, deletion, or other privacy requests, contact us:
-- Email: eduardsahakyan2001@gmail.com
+- Email: support@zenarium.am
 
 ## 11. Changes to This Policy
 
@@ -158,4 +169,4 @@ We may update this policy from time to time. We will update the "Last updated" d
 ## 12. Contact
 
 If you have questions about this policy:
-- eduardsahakyan2001@gmail.com
+- support@zenarium.am
